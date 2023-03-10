@@ -32,7 +32,7 @@ unsigned int fibonacci2(unsigned int num) {
 	unsigned int Numi = 0;//接f(i)的结果
 	unsigned int Numi1 = 1;//fibonacci第一个数，以及拿来接后续f(i-2)的结果
 	unsigned int Numi2 = 1;//fibonacci第二个数，以及拿来接后续f(i-1)的结果
-	//由于第一个和第一个数字已经有初值了，所以从第二个数开始
+	//由于第一个和第一个数字已经有初值了，所以从第二个数开始,因此需要num-2次
 	for (unsigned int i = 2; i < num; i++) {
 		Numi = Numi1 + Numi2;
 		Numi1 = Numi2;
