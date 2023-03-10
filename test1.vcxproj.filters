@@ -27,5 +27,8 @@
     <ClCompile Include="青蛙跳台阶.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="不用加减乘除实现加法运算.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

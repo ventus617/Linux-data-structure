@@ -142,6 +142,7 @@
     <ClCompile Include="array.cpp" />
     <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="list01.cpp" />
+    <ClCompile Include="不用加减乘除实现加法运算.cpp" />
     <ClCompile Include="青蛙跳台阶.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
