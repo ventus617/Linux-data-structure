@@ -3,15 +3,19 @@ using namespace std;
 
 int BinaryChop(int *arr,int len,int num) {
 	if (arr == NULL)return -1;
+	//ä¸­é—´å€¼
 	int Mid = 0;
 	int Head = 0;
 	int Tail = len-1;
+	//æŸ¥æ‰¾
 	while (Head <= Tail) {
 		Mid = (Head + Tail) >> 1;
 		if (arr[Mid] == num)return Mid;
+		//å·¦åŠéƒ¨åˆ†
 		if (arr[Mid] > num) {
 			Tail = Mid - 1;
 		}
+		//å³åŠéƒ¨åˆ†
 		if (arr[Mid] < num) {
 			Head = Mid + 1;
 		}
@@ -20,11 +24,14 @@ int BinaryChop(int *arr,int len,int num) {
 }
 int BinaryChop2(int* arr, int head, int len,int num) {
 	if (arr == NULL || len < head)return -1;
+	//ä¸­é—´å€¼
 	int Mid = (len + head) >> 1;
 	if (arr[Mid] == num)return Mid;
+	//å³åŠéƒ¨åˆ†
 	else if (arr[Mid] < num) {
 		return BinaryChop2(arr, Mid+1,len, num);
 	}
+	//å·¦åŠéƒ¨åˆ†
 	else if (arr[Mid > num]) {
 		return BinaryChop2(arr, head, Mid-1, num);
 	}
@@ -35,7 +42,7 @@ int main(void) {
 	int len = sizeof(arr) / sizeof(int);
 	int num = 0;
 	cin >> num;
-	//cout<<"ÕÒµ½¸ÃÊı,¸ÃÊıÏÂ±êÎª£º"<<BinaryChop2(arr, 0,len-1,num)<<endl;
-	cout << "ÕÒµ½¸ÃÊı,¸ÃÊıÏÂ±êÎª£º" << BinaryChop(arr, len, num) << endl;
+	//cout<<"æ‰¾åˆ°è¯¥æ•°,è¯¥æ•°ä¸‹æ ‡ä¸ºï¼š"<<BinaryChop2(arr, 0,len-1,num)<<endl;
+	cout << "æ‰¾åˆ°è¯¥æ•°,è¯¥æ•°ä¸‹æ ‡ä¸ºï¼š" << BinaryChop(arr, len, num) << endl;
 	return 0;
 }
