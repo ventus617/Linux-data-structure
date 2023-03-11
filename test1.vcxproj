@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array.cpp" />
+    <ClCompile Include="BinaryChop.cpp" />
     <ClCompile Include="fibonacci.cpp" />
     <ClCompile Include="list01.cpp" />
     <ClCompile Include="不用加减乘除实现加法运算.cpp" />
