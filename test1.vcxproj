@@ -139,12 +139,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryTree.cpp" />
+    <ClCompile Include="BinaryTree2.cpp" />
+    <ClCompile Include="BinaryTree3.cpp" />
+    <ClCompile Include="divided_conquer.cpp" />
     <ClCompile Include="array.cpp" />
     <ClCompile Include="BinaryChop.cpp" />
     <ClCompile Include="fibonacci.cpp" />
+    <ClCompile Include="HashMap.cpp" />
+    <ClCompile Include="KMP.cpp" />
     <ClCompile Include="list%28C++%29.cpp" />
     <ClCompile Include="list01.cpp" />
+    <ClCompile Include="queue.cpp" />
+    <ClCompile Include="REDBLACKTREE.cpp" />
+    <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="Sunday(字符串匹配).cpp" />
+    <ClCompile Include="TierTree.cpp" />
     <ClCompile Include="不用加减乘除实现加法运算.cpp" />
+    <ClCompile Include="两个栈实现队列.cpp" />
+    <ClCompile Include="两个队列实现栈.cpp" />
+    <ClCompile Include="图.cpp" />
     <ClCompile Include="青蛙跳台阶.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
