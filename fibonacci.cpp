@@ -25,6 +25,8 @@ unsigned int fibonacci1(unsigned int num) {
 	int a = fibonacci1(num - 1) + fibonacci1(num - 2);
 	return a;
 }
+//或者在递归过程中，存储一下计算过的值
+
 //优化fibonacci，线性的处理方式，即所需的最后一个值，是前两个值的结果，从小往大算，保存每一次的结果
 unsigned int fibonacci2(unsigned int num) {
 	if (num == 0)return 0;
@@ -40,3 +42,4 @@ unsigned int fibonacci2(unsigned int num) {
 	}
 	return Numi;
 }
+//数学解法 矩阵方法
